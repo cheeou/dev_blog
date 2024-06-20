@@ -14,7 +14,7 @@ const users = [
   {
     id: 0, // default author
     username: "Ju",
-    img: "img/user/bunney.jpg",
+    img: "img/user/bunney2.jpg",
   },
 ];
 
