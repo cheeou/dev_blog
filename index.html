@@ -163,12 +163,12 @@
     const favicon = document.getElementById('favicon');
 
     // Default and active favicon URLs
-    const defaultFavicon = 'fimg/icon/favicon-default.ico';
-    const activeFavicon = 'img/icon/favicon-active.ico';
+    const defaultFavicon = 'favicon-default.ico';
+    const activeFavicon = 'favicon-active.ico';
 
-    // Function to change favicon
+    // Function to change favicon with a cache-busting query parameter
     function changeFavicon(src) {
-      favicon.href = src;
+      favicon.href = src + '?v=' + new Date().getTime();
     }
 
     // Event listeners for focus and blur
