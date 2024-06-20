@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" id="favicon" href="img/icon/favicon-default.ico" type="image/x-icon" />
+  <link rel="shortcut icon" id="favicon" href="img/icon/favicon-active.ico" type="image/x-icon" />
   <title>Weniv Blog</title>
 
   <!-- marked -->
@@ -108,25 +108,6 @@
     <div id="mobileMenu" class="absolute bg-background w-full max-w-[1190px] border-b border-graylv2 z-10 md:hidden">
     </div>
     <!-- // 모바일에서 메뉴 영역이 보이도록 하는 영역 -->
-
-    <!-- 탭 클릭 여부 파비콘 변경 -->
-    <script>
-      // Favicon element
-      const favicon = document.getElementById('favicon');
-
-      // Default and active favicon URLs
-      const defaultFavicon = 'favicon-default.ico';
-      const activeFavicon = 'favicon-active.ico';
-
-      // Function to change favicon with a cache-busting query parameter
-      function changeFavicon(src) {
-        favicon.href = src + '?v=' + new Date().getTime();
-      }
-
-      // Event listeners for focus and blur
-      window.addEventListener('focus', () => changeFavicon(defaultFavicon));
-      window.addEventListener('blur', () => changeFavicon(activeFavicon));
-    </script>
   </header>
 
   <main class="container p-8 pb-4 w-full mx-auto max-w-[1190px] md:pt-[60px]">
